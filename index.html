@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cardápio 302</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="hero">
+    <div class="overlay"></div>
+
+    <div class="hero-content">
+      <h1>Bem-vindos</h1>
+      <p>ao cardápio 302</p>
+
+      <a href="#categorias" class="btn-principal">
+        Ver Cardápio
+      </a>
+    </div>
+  </header>
+
+
+  <section class="categorias" id="categorias">
+
+    <h2>O que você irá pedir hoje?</h2>
+
+    <div class="grid-categorias">
+
+      <a href="doces.html" class="categoria-card doces">
+        <span>🍰</span>
+        <h3>Doces</h3>
+      </a>
+
+      <a href="salgados.html" class="categoria-card salgados">
+        <span>🥪</span>
+        <h3>Salgados</h3>
+      </a>
+
+      <a href="bebidas.html" class="categoria-card bebidas">
+        <span>🥤</span>
+        <h3>Bebidas</h3>
+      </a>
+
+    </div>
+  </section>
+
+
+  <section class="pix-area">
+
+    <h2>Pagamento via PIX</h2>
+
+    <div class="pix-box">
+      <p id="pix-chave">51996890929</p>
+
+      <button onclick="copiarPix()" class="btn-pix">
+        Copiar chave PIX
+      </button>
+
+      <button onclick="pago()" class="btn-pago">
+        Já paguei
+      </button>
+    </div>
+
+  </section>
+
+
+  <div class="carrinho-btn" onclick="abrirCarrinho()">
+    🛒
+    <span id="contador">0</span>
+  </div>
+
+
+  <div class="carrinho" id="carrinho">
+
+    <div class="topo-carrinho">
+      <h2>Seu Pedido</h2>
+      <button onclick="fecharCarrinho()">✖</button>
+    </div>
+
+    <div id="itens-carrinho"></div>
+
+    <div class="footer-carrinho">
+      <h3>Total: R$ <span id="total">0.00</span></h3>
+
+      <input type="text" id="nome" placeholder="Seu nome">
+      <input type="text" id="turma" placeholder="Sua turma">
+
+      <button onclick="finalizarPedido()" class="btn-finalizar">
+        Finalizar no WhatsApp
+      </button>
+    </div>
+
+  </div>
+<footer class="footer">
+
+  <div class="footer-content">
+
+    <img src="logo.png" class="logo-footer">
+
+    <h2>302 Formandos</h2>
+
+    <p>Não é só um ano, é a 302</p>
+
+    <div class="redes">
+
+      <a href="https://www.instagram.com/302formandos_26" target="_blank">
+        302formandos_26
+      </a>
+
+      <a href="https://www.instagram.com/gabrieletei14" target="_blank">
+        Desenvolvido por gabrieletei14
+      </a>
+
+    </div>
+
+  </div>
+
+</footer>
+
+  <a href="https://wa.me/555196890929" class="whatsapp" target="_blank">
+    <img src="whatsapp.png">
+  </a>
+
+
+  <script src="script.js"></script>
+
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+
+</body>
+</html>

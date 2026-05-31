@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Salgados</title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <header class="topo-pagina">
+
+    <a href="index.html" class="voltar">← Voltar</a>
+
+    <h1>Salgados</h1>
+
+  </header>
+
+  <section class="produtos-grid">
+
+    <div class="produto-card">
+
+      <img src="enroladinho.jpeg">
+
+      <div class="produto-info">
+
+        <h3>Enroladinho</h3>
+
+        <span>R$ 2,50</span>
+
+        <button onclick="adicionarCarrinho('Enroladinho', 2.5)">
+          Adicionar
+        </button>
+
+      </div>
+
+    </div>
+
+
+    <div class="produto-card">
+
+      <img src="bauru.jpeg">
+
+      <div class="produto-info">
+
+        <h3>Bauru</h3>
+
+        <span>R$ 5,00</span>
+
+        <button onclick="adicionarCarrinho('Bauru', 5)">
+          Adicionar
+        </button>
+
+      </div>
+
+    </div>
+
+
+    <div class="produto-card">
+
+      <img src="sanduiche.jpeg">
+
+      <div class="produto-info">
+
+        <h3>Sanduíche Natural</h3>
+
+        <span>R$ 4,50</span>
+
+        <button onclick="adicionarCarrinho('Sanduíche Natural', 4.5)">
+          Adicionar
+        </button>
+
+      </div>
+
+    </div>
+
+    
+    <div class="produto-card">
+
+      <img src="pizza.jpeg">
+
+      <div class="produto-info">
+
+        <h3>Pizza</h3>
+
+        <p>Calabresa</p>
+
+        <span>R$ 5</span>
+
+        <button onclick="adicionarCarrinho('Pizza', 5)">
+          Adicionar
+        </button>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <div class="carrinho-btn" onclick="abrirCarrinho()">
+    🛒
+    <span id="contador">0</span>
+  </div>
+
+  <div class="carrinho" id="carrinho">
+    <div class="topo-carrinho">
+      <h2>Seu Pedido</h2>
+      <button onclick="fecharCarrinho()">✖</button>
+    </div>
+
+    <div id="itens-carrinho"></div>
+
+    <div class="footer-carrinho">
+      <h3>Total: R$ <span id="total">0.00</span></h3>
+
+      <input type="text" id="nome" placeholder="Seu nome">
+      <input type="text" id="turma" placeholder="Sua turma">
+
+      <button onclick="finalizarPedido()" class="btn-finalizar">
+        Finalizar no WhatsApp
+      </button>
+    </div>
+  </div>
+
+  <footer class="footer">
+
+    <div class="footer-content">
+
+      <img src="logo.png" class="logo-footer">
+
+      <h2>302 Formandos</h2>
+
+      <p>Não é só um ano, é a 302 ❤️</p>
+
+      <div class="redes">
+
+        <a href="https://www.instagram.com/302formandos_26" target="_blank">
+          302formandos_26
+        </a>
+
+        <a href="https://www.instagram.com/gabrieletei14" target="_blank">
+          Desenvolvido por gabrieletei14
+        </a>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Doces</title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <header class="topo-pagina">
+
+    <a href="index.html" class="voltar">← Voltar</a>
+
+    <h1>Doces</h1>
+
+  </header>
+
+  <section class="produtos-grid">
+
+    <div class="produto-card">
+
+      <img src="bolo.jpeg">
+
+      <div class="produto-info">
+
+        <h3>Bolo de Chocolate</h3>
+
+        <p>Cobertura de leite ninho</p>
+
+        <span>R$ 3,00</span>
+
+        <button onclick="adicionarCarrinho('Bolo de Chocolate', 3)">
+          Adicionar
+        </button>
+
+      </div>
+
+    </div>
+
+
+    <div class="produto-card">
+
+      <img src="paçoca.jpeg">
+
+      <div class="produto-info">
+
+        <h3>Paçoca</h3>
+
+        <span>R$ 1,00</span>
+
+        <button onclick="adicionarCarrinho('Paçoca', 1)">
+          Adicionar
+        </button>
+
+      </div>
+
+    </div>
+
+
+    <div class="produto-card">
+
+      <img src="freegels.jpeg">
+
+      <div class="produto-info">
+
+        <h3>Freegels</h3>
+
+        <span>R$ 2,00</span>
+
+        <button onclick="adicionarCarrinho('Freegels', 2)">
+          Adicionar
+        </button>
+      </div>
+      </div>
+
+      <div class="produto-card">
+
+        <img src="Pirulito.jpeg">
+
+        <div class="produto-info">
+
+          <h3>Pirulito</h3>
+
+          <span>R$ 1,00</span>
+
+          <button onclick="adicionarCarrinho('Pirulito', 1)">
+            Adicionar
+          </button>
+        </div>
+        </div>
+
+        <div class="produto-card">
+
+          <img src="bolacha.jpeg">
+
+          <div class="produto-info">
+
+            <h3>bolacha</h3>
+
+            <span>R$ 3,50</span>
+
+            <button onclick="adicionarCarrinho('Bolacha', 3.5)">
+              Adicionar
+            </button>
+          </div>
+          </div>
+
+          <div class="produto-card">
+
+            <img src="goma.jpeg">
+
+            <div class="produto-info">
+
+              <h3>Bala de foma</h3>
+
+              <span>R$ 1,00</span>
+
+              <button onclick="adicionarCarrinho('Goma', 1)">
+                Adicionar
+              </button>
+            </div>
+          </div>
+
+  </section>
+
+<div class="carrinho-btn" onclick="abrirCarrinho()">
+  🛒
+  <span id="contador">0</span>
+</div>
+
+<div class="carrinho" id="carrinho">
+  <div class="topo-carrinho">
+    <h2>Seu Pedido</h2>
+    <button onclick="fecharCarrinho()">✖</button>
+  </div>
+
+  <div id="itens-carrinho"></div>
+
+  <div class="footer-carrinho">
+    <h3>Total: R$ <span id="total">0.00</span></h3>
+
+    <input type="text" id="nome" placeholder="Seu nome">
+    <input type="text" id="turma" placeholder="Sua turma">
+
+    <button onclick="finalizarPedido()" class="btn-finalizar">
+      Finalizar no WhatsApp
+    </button>
+  </div>
+</div>
+  
+  <footer class="footer">
+
+    <div class="footer-content">
+
+      <img src="logo.png" class="logo-footer">
+
+      <h2>302 Formandos</h2>
+
+      <p>Não é só um ano, é a 302</p>
+
+      <div class="redes">
+
+        <a href="https://www.instagram.com/302formandos_26" target="_blank">
+          @302formandos_26
+        </a>
+
+        <a href="https://www.instagram.com/gabrieletei14" target="_blank">
+          Desenvolvido por @gabrieletei14
+        </a>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
